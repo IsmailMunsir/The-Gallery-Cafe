@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="About.css"> <!-- link to external CSS file -->
+</head>
+<body>
+
+    <style>
+        .footer-background {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        }
+
+        .footer-background img {
+        width: 100%;
+        height: auto;
+        display: block;
+        }
+
+        .footer-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #333;
+        color: #fff;
+        padding: 50px 25px;
+        flex-wrap: wrap;
+        background-image: url('Footer/Footer.png'); /* Ensure this image exists in the specified path */
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        }
+
+        .footer-section {
+        flex: 1;
+        margin: 20px 30px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        }
+
+        .footer-section h3 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        }
+
+        .footer-section p, .footer-section ul {
+        font-size: 1rem;
+        line-height: 1.6;
+        }
+
+        .footer-section ul {
+        list-style-type: none;
+        padding-left: 20px;
+        margin-top: 10px;
+        }
+
+        .footer-section ul li {
+        margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+        color: #fff;
+        text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+        color: #ffe600;
+        }
+
+        .footer-section .social-icons a {
+        font-size: 1.5rem;
+        color: #fcfcfc;
+        margin-right: 15px;
+        text-decoration: none;
+        }
+
+            .social-icons a i {
+            font-size: 24px;
+            color: #fcfcfc;
+            margin-right: 15px;
+            text-decoration: none;
+            display: inline-block;
+            }
+
+            .social-icons a i:hover {
+            color: #ffe600;
+            }
+
+
+        .footer-logo {
+        text-align: center;
+        margin-bottom: 20px;
+        }
+
+        .footer-bottom {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #9d7808;
+        color: #fff;
+        font-size: 0.9rem;
+        }
+
+        .footer-bottom p {
+        margin: 0;
+        }
+
+    </style>
+    <header class="header">
+        <a href="index.php">
+            <img src="Logo/Logo1.png" alt="Logo" class="logo">
+        </a>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.php">Home</a></li>
+                    <li><a href="about.html" class="About">About</a></li>
+                    <li><a href="menu.php">All Products</a></li>
+                    <li><a href="Table_Reservation.html">Table Reservation</a></li>
+                    <li><a href="Parking.html">Parking</a></li>
+                </ul>
+            <div class="icons">
+                <i class="fas fa-search" id="search-icon"></i>
+                <input type="text" class="search-bar" id="search-bar" placeholder="Search...">
+                <a href="Login.html" class="fas fa-user"></a>
+                <div class="shopping-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="shopping-cart-popup">
+                        <p>No products in the cart.</p>
+                        <button>Return to shop</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="banner-container">
+        <h1> About</h1>
+        <img src="About image/about4.jpg" alt="background_img">
+    </div>
+
+
+    <div class="about-section">
+        <h1>About The Gallery Cafe</h1>
+        <div class="about-content">
+            <section>
+                <h2>Introduction</h2>
+                <p>The Gallery Cafe is a unique dining experience where art meets culinary excellence. Established in 2000, our cafe is nestled in the heart of 2 Alfred House Rd, Colombo 00300, providing a serene and inspiring environment for all who visit.</p>
+            </section>
+            <section>
+                <h2>Our Story</h2>
+                <p>Founded by Mohamed Munsir Ahamed Ismail, The Gallery Cafe was born out of a passion for both fine dining and fine art. Mohamed Munsir Ahamed Ismail vision was to create a space where guests can enjoy delicious, thoughtfully crafted meals while surrounded by beautiful artworks from local and international artists.</p>
+            </section>
+            <section>
+                <h2>Ambiance</h2>
+                <p>The Gallery Cafe boasts a sophisticated yet cozy atmosphere, perfect for any occasion. Our interior is thoughtfully designed to blend the aesthetic elements of an art gallery with the comfort of a cafe. Each piece of art displayed is carefully curated to enhance your dining experience, making every visit unique.</p>
+            </section>
+            <section>
+                <h2>Culinary Excellence</h2>
+                <p>Our menu is a celebration of seasonal ingredients and innovative culinary techniques. Head Chef Kabilayan Vasanthakumar and their talented team create dishes that are as visually stunning as they are delicious. From gourmet breakfasts to exquisite dinners, our offerings cater to a wide range of tastes and dietary preferences.</p>
+            </section>
+            <section>
+                <h2>Art Exhibitions</h2>
+                <p>At The Gallery Cafe, art is at the forefront of our identity. We regularly host exhibitions featuring works from emerging and established artists. Our gallery space is ever-evolving, ensuring that there is always something new to discover. Guests are invited to explore the artworks on display, many of which are available for purchase.</p>
+            </section>
+            <section>
+                <h2>Community Engagement</h2>
+                <p>We believe in supporting our local community and fostering a love for the arts. The Gallery Cafe regularly hosts events such as art workshops, live music performances, and artist meet-and-greets. We are proud to collaborate with local organizations and artists to bring enriching cultural experiences to our patrons.</p>
+            </section>
+            <section>
+                <h2>Sustainability</h2>
+                <p>The Gallery Cafe is committed to sustainability and eco-friendly practices. We source our ingredients from local farms and suppliers who share our dedication to quality and sustainability. Our efforts extend beyond the kitchen, as we strive to reduce our environmental footprint through various initiatives such as composting and minimizing waste.</p>
+            </section>
+            <section>
+                <h2>Customer Experience</h2>
+                <p>Our guests are at the heart of everything we do. Whether you're visiting for a casual coffee, a business meeting, or a celebratory meal, our friendly and attentive staff are here to ensure you have a memorable experience. We invite you to relax, savor the flavors, and immerse yourself in the artistic ambiance of The Gallery Cafe.</p>
+            </section>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>The Gallery Cafe Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.938427530778!2d79.85215842568127!3d6.897967968697085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259602cbbbfe5%3A0x830952b8b777cac3!2s2%20Alfred%20House%20Rd%2C%20Colombo%2000300!5e0!3m2!1sen!2slk!4v1723704695550!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>ABOUT US</h3>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.php">Menu</a></li>
+                    <li><a href="Table_Reservation.html">Table Reservation</a></li>
+                    <li><a href="Parking.html">Parking</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>CONTACT US</h3>
+                <p>Email: info@gallerycafe.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Art Street, Colombo, Sri Lanka</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=61559588762495"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://x.com/AhamedI76122"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.instagram.com/ah____ismail_________/"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ahamed-ismail-5ab879212/"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Gallery Café | Designed by [Ahamed Ismail]</p>
+        </div>
+    </footer>
+
+    <script src="About.js"></script>
+</body>
+</html>

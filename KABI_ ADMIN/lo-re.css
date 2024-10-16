@@ -1,0 +1,124 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #41350f; /* Replace this with your desired color */
+}
+
+.animated-background {
+    display: none; /* Hide the animated background if you only want a solid color */
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #ffc107;
+}
+
+p{
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.links a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.Sign_In{
+    color: #000000;
+    margin-left: 140px;
+}
+
+.Create_your_account{
+    color: #000000;
+    margin-left: 220px;
+}
+
+button {
+    background-color: #ffc107;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #ffcf3d;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #888;
+}
+
+.navbar-brand {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.navbar-brand img {
+    height: 60px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    padding: 0.1rem;
+}
+
+.username, .email, .password, .confirm-password {
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.remember-me2 {
+    display: flex;
+    justify-content: space-between;
+}

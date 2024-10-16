@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+   --primary-color: #9d7808; /* Blue color for the primary elements */
+   --text-color: #382c06; /* Dark gray for text */
+   --bg-color: #f5f5f5; /* Light gray background */
+   --white: #fff; /* White color */
+   --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); /* Subtle shadow */
+   --border: .1rem solid var(--text-color); /* Border color */
+}
+
+/* Global Styles */
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   color: #333;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(270deg, #ffc107, #ac9a66, #9d7808, #382c06);
+   background-size: 600% 600%;
+   animation: GradientAnimation 15s ease infinite;
+   position: relative;
+   overflow-x: hidden;
+}
+
+@keyframes GradientAnimation {
+   0% {
+       background-position: 0% 50%;
+   }
+   50% {
+       background-position: 100% 50%;
+   }
+   100% {
+       background-position: 0% 50%;
+   }
+}
+
+.header {
+    background-color: #382c07;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(28, 28, 28, 0.2);
+}
+
+.lg {
+    display: flex;
+    align-items: center;
+}
+
+.lg h1 {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.container_nev {
+   display: flex;
+   height: calc(100vh - 80px); 
+   
+}
+
+.sidebar {
+   width: 250px;
+   background-color: #382c06;
+   color: #fff;
+   padding: 20px;
+   height: 100%;
+}
+
+.sidebar .nav {
+   list-style: none;
+   padding: 0;
+}
+
+.sidebar .nav li {
+   margin: 15px 0;
+}
+
+.sidebar .nav li a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+}
+
+.sidebar .nav li a:hover {
+   text-decoration: underline;
+}
+
+.container {
+   max-width: 1200px;
+   padding: 2rem;
+   margin: 0 auto;
+}
+
+.admin-product-form-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+
+.admin-product-form-container form {
+   max-width: 50rem;
+   margin: 0 auto;
+   padding: 2rem;
+   border-radius: .5rem;
+   background: #9d7808; /* Blue background for form */
+   box-shadow: var(--box-shadow); /* Shadow for form */
+   color: var(--white); /* White text color */
+}
+
+.admin-product-form-container form h3 {
+   text-transform: uppercase;
+   color: var(--white); /* White color for heading */
+   margin-bottom: 1rem;
+   text-align: center;
+   font-size: 2.5rem;
+}
+
+.admin-product-form-container form .box {
+   width: 100%;
+   border-radius: .5rem;
+   padding: 1.2rem 1.4rem;
+   font-size: 1.8rem;
+   margin: 1rem 0;
+   background: var(--white); /* White background for input fields */
+   color: var(--text-color); /* Dark text color */
+}
+
+.admin-product-form-container form .btn {
+   display: block;
+   width: 100%;
+   cursor: pointer;
+   border-radius: .5rem;
+   margin-top: 1rem;
+   font-size: 1.8rem;
+   padding: 1rem 3rem;
+   background: #382c06; /* Dark background for button */
+   color: var(--white); /* White text color */
+   text-align: center;
+}
+
+.admin-product-form-container form .btn:hover {
+   background: var(--primary-color); /* Hover effect: Blue background for button */
+}
+
+.product-display {
+   margin: 2rem 0;
+}
+
+.product-display-table {
+   width: 100%;
+   text-align: center;
+}
+
+.product-display-table thead {
+   background: var(--text-color); /* Dark background for table header */
+}
+
+.product-display-table thead th {
+   padding: 1rem;
+   font-size: 2rem;
+   color: var(--white); /* White text color */
+}
+
+.product-display-table tr {
+   border-bottom: var(--border); /* Border for table rows */
+}
+
+.product-display-table tr:last-child {
+   border-bottom: none;
+}
+
+.product-display-table td {
+   padding: 1.5rem;
+   font-size: 2rem;
+   color: var(--text-color); /* Dark text color */
+}
+
+.product-display-table td img {
+   height: 10rem;
+}
+
+.product-display-table td a {
+   cursor: pointer;
+   font-size: 2rem;
+   text-decoration: none; /* Remove underline */
+   display: inline-block; /* Ensure it behaves like a block element */
+}
+
+.product-display-table td a.btn {
+   color: var(--white); /* White color for other buttons */
+   background: var(--primary-color); /* Blue background for other buttons */
+   border-radius: .5rem;
+   padding: .5rem 1.5rem;
+}
+
+.product-display-table td a.btn:hover {
+   background: var(--text-color); /* Darker background on hover */
+}
+
+.product-display-table td a.delete-btn {
+   color: #ffffff; /* Red color for delete button */
+   background: none;
+   padding: 0;
+   font-size: 2rem;
+   text-decoration: none; /* Remove underline */
+   display: inline-block; /* Ensure it behaves like a block element */
+   margin: 0 0.5rem; /* Space between buttons */
+}
+
+.product-display-table td a.delete-btn:hover {
+   color: #ffffff; /* Darker red on hover */
+   text-decoration: underline; /* Underline on hover */
+}
+
+.message {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 1.5rem 3rem;
+   background-color: var(--primary-color); /* Blue background for success message */
+   color: var(--white); /* White text color */
+   font-size: 2rem;
+   border-radius: .5rem;
+   z-index: 1000;
+   box-shadow: var(--box-shadow);
+}
+
+.message.success {
+   background-color: #9d7808; /* Optional: Green background for success */
+}
+
+.fade-out {
+   opacity: 0;
+   transition: opacity 1s ease-out;
+}

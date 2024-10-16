@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gallery Cafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="Table_Reservation.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.php">
+            <img src="Logo/Logo1.png" alt="Logo" class="logo">
+        </a>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.html" class="About">About</a></li>
+                <li><a href="menu.php">All Products</a></li>
+                <li><a href="Table_Reservation.html">Table Reservation</a></li>
+                <li><a href="Parking.html">Parking</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fas fa-search" id="search-icon"></i>
+                <input type="text" class="search-bar" id="search-bar" placeholder="Search...">
+                <a href="Login.html" class="fas fa-user"></a>
+                <div class="shopping-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="shopping-cart-popup">
+                        <p>No products in the cart.</p>
+                        <button>Return to shop</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    </header>
+
+
+    <div class="banner-container">
+        <h1>Table Reservation</h1>
+        <img src="Table image/banner.jpg" alt="background_img">
+    </div>
+    <div class="content-container">
+        <div class="container">
+            <h1>Table Reservation</h1>
+            <form action="./Table_Reservation.php" method="POST">
+                <div class="date">
+                    <label for="date"><i class="fas fa-calendar"></i> Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="time">
+                    <label for="time"><i class="fas fa-clock"></i> Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="guests">
+                    <label for="guests"><i class="fas fa-users"></i> Number of Guests</label>
+                    <input type="number" id="guests" name="guests" required>
+                </div>
+                <div class="name">
+                    <label for="name"><i class="fas fa-user"></i> Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="email">
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="phone">
+                    <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+                </div>
+                <button type="submit">Book Table</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>ABOUT US</h3>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.php">Menu</a></li>
+                    <li><a href="Table_Reservation.html">Table Reservation</a></li>
+                    <li><a href="Parking.html">Parking</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>CONTACT US</h3>
+                <p>Email: ahamedismial12345@gamil.com</p>
+                <p>Phone: +94 75 223 6387</p>
+                <p>Address: 2 Aifred House Rd, Colombo 00300</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=61559588762495"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://x.com/AhamedI76122"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.instagram.com/ah____ismail_________/"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ahamed-ismail-5ab879212/"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Gallery Café | Designed by [Ahamed Ismail]</p>
+        </div>
+    </footer>
+    
+    <script src="Table_Reservation.js"></script> <!-- link to external JavaScript file -->
+</body>
+</html>
